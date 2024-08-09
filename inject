@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lunar</title>
+  </head>
+  <body>
+      <h3 id="title">⠀New tab</h3>
+      <h4 id="urlstyle">⠀<input id="url"><input id="javascript"><input id="proxylink"><button class="button" onclick="runcode()">execute</button></h4>
+      <iframe id="proxy" src="https://missaoempreendedora.com/wp-content/plugins/super-links/application/helpers/super-links-proxy.php?https://www.google.com/"></iframe>
+      <script>console.log(document.title)</script>
+        <style>
+            #title {
+                background-color: grey;
+                width: 200px;
+                font-family: sans-serif;
+                height: 30px;
+                margin-top: 0;
+                margin-left: -14px;
+                border-top-right-radius: 6px;
+                
+            }
+      #url {
+      background-color: #414141;
+        position: absolute;
+          margin-top: 2px;
+          margin-left: 23px;
+          border-radius: 6px;
+          color:white;
+          
+            }
+             #javascript {
+      background-color: #414141;
+        
+          margin-top: 2px;
+          margin-left: 380px;
+          border-radius: 6px;
+                 
+                 color:white;}
+            #proxylink {
+      background-color: #414141;
+        
+          margin-top: 2px;
+          margin-left: 380px;
+          border-radius: 6px;
+                 
+                 color:white;}
+          
+            #urlstyle {
+                background-color: dimgrey;
+                 margin-top: -19px;
+                margin-left: -10px;
+                width: 101.3%
+            }
+            .button {
+                background-color: #332f2f;
+                color: white;
+                border-radius: 6px;
+            }
+            #proxy{margin-top:-20px;
+                margin-left: -7px;
+            width: 100.8%;
+            height: 563px; border: none;}
+            body {background-color: #515151; overflow-y: hidden}</style>
+      <script>function runcode() {
+var frame = document.getElementById('proxy')
+frame.contentWindow.eval(document.getElementById('javascript').value)              
+              
+              }
+      window.onload = function (){    window.onbeforeunload = function () {return true;}}
+  var url = document.getElementById('url')
+  url.addEventListener('keydown', function (e) {
+      if (e.keyCode == 13) {
+        var link = document.getElementById("proxylink").value
+          var frame = document.getElementById('proxy')
+         frame.src = link + btoa(url.value)
+      }
+  })
+      // program to display time every 3 seconds
+
+// calling the function
+</script>
+  </body>
+</html>
