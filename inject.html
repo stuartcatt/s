@@ -72,7 +72,7 @@ frame.contentWindow.eval(document.getElementById('javascript').value)
       if (e.keyCode == 13) {
         var link = document.getElementById("proxylink").value
           var frame = document.getElementById('proxy')
-         frame.src = link + btoa(url.value)
+         frame.src = url.value
       }
   })
       // program to display time every 3 seconds
