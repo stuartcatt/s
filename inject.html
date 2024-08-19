@@ -6,7 +6,7 @@
   <body>
       <h3 id="title">⠀New tab</h3>
       <h4 id="urlstyle">⠀<input id="url"><input id="javascript"><input id="proxylink"><button class="button" onclick="runcode()">execute</button></h4>
-      <iframe id="proxy" src="https://missaoempreendedora.com/wp-content/plugins/super-links/application/helpers/super-links-proxy.php?https://www.google.com/"></iframe>
+      <iframe id="proxy" src="https://classroom.community/uv/service/hvtrs8%2F-wuw%2Cgmoelg.aoo%2F"></iframe>
       <script>console.log(document.title)</script>
         <style>
             #title {
@@ -70,17 +70,7 @@ frame.contentWindow.eval(document.getElementById('javascript').value)
   var url = document.getElementById('url')
   url.addEventListener('keydown', function (e) {
       if (e.keyCode == 13) {
-        var link = document.getElementById("proxylink").value
-          var frame = document.getElementById('proxy')
-          if (url.value.includes("https://")) {
-              frame.src = url.value
-          } else {
-              if (url.value.includes("http://")) {
-                   frame.src = url.value
-              } else {
-                   frame.src = "https://" + url.value
-              }
-          }
+frame.contentWindow.eval(window.location.replace(document.getElementById('url').value))   
          
       }
   })
